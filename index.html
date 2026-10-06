@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+<title>
+Student Management Dashboard
+</title>
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <!--Header--> 
+       <header>
+        <h1>Student Management</h1>
+        <p>Manage students easily</p>
+       </header>
+       <main>
+
+        <!-- Dashboard -->
+         <section class="dashboard">
+              <div class="card">
+                <h2>Total Students</h2>
+            <p id="total-students">0</p>
+        </div>
+        <div class="card">
+            <h2>CSE students</h2>
+            <p id="cse-students">0</p>
+        </div>
+        <div class="card">
+            <h2>SE students</h2>
+            <p id="se-students">0</p>
+        </div>
+         </section>
+
+         <!--Add Student-->
+         <section class="form-section">
+            <h2>Add Student</h2>
+            <form id="student-form">
+                <label for="name">Student Name</label>
+                <input type="text" id="name" placeholder="Enter student name">
+                 <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter Age">
+<label for="department">Department</label>
+                <select  name="department" id="department">
+                    <option id="cseSt" value="Computer Science & Engineering">Computer Science & Engineering</option>
+                     <option id="seSt" value="Software Engineering">Software Engineering</option>
+                     <option  value="Electrical Power & Control Engineering">Electrical Power & Control Engineering</option>
+                     <option  value="Electronics & Communication Engineering">Electronics & Communication Engineering</option>
+                     <option  value="Other Engineering Departments">Other Engineering Departments</option>
+                </select>
+
+                <button type="submit" id="submit-button">Add Student</button>
+                <button type="button" id="cancel-button" hidden>Cancel Edit</button>
+            </form>
+         </section>
+       
+         <!--Search-->
+         <section class="search-section">
+            <h2>Students</h2>
+            <input type="text" id="search" placeholder="Search students...">
+         </section>
+
+         <!--Student List-->
+         <section class="student-section">
+            <div id="students"></div>
+
+            <!--javascript will display students here-->
+         </section>
+       </main>
+        <script src="script.js"></script>
+    </body>
+   
+</html>
